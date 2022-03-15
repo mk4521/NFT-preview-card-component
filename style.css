@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-blue: hsl(216, 50%, 16%); 
+    --very: hsl(215, 32%, 27%); 
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue);
+    min-height: 10px;
+}
+
+main, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+}
+
+.container {
+    margin: 15% 35%;
+    max-width: 350px;
+    max-height: 1000px;
+    border-radius: 16px;
+    background-color: var(--very-blue);
+}
+
+.content {
+    margin: 24px;
+}
+
+.image-equilibrium {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+.image-equilibrium img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.1s;
+    border-radius: 8px;
+    background-color: var(--cyan);
+  }
+
+  .image-equilibrium:hover .overlay {
+    opacity: 0.5;
+  }
+
+  .icon {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.bi bi-eye-fill:hover {
+    color: var(--white);
+  }
+
+.d-equilibrium a {
+    font-size: 24px;
+    margin: 24px 0;
+    color: var(--white);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.d-equilibrium--link:hover, a.avatar-creator:hover {
+    color: var(--cyan);
+}
+
+.d-equilibrium p {
+    color: var(--soft-blue);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 16px;
+    max-width: 100%;
+}
+
+.div-details {
+    display: flex;
+    justify-content: space-between;
+    max-height: 20px;
+    max-width: 300px;
+    margin: 24px 0;
+}
+
+.div-details .div-details--eth {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.div-details--eth img {
+    width: 11px;
+    height: 19px;
+}
+
+.div-details--eth-number {
+    color: var(--cyan);
+    padding-left: 5%;
+}
+
+.div-details .div-details--time {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.div-details .div-details--time img {
+    width: 19px;
+    height: 19px;
+    margin: 2% 4% 0 0;
+}
+
+.div-details--time-days {
+    color:  var(--soft-blue);
+    font-weight: lighter;
+    width: 72px;
+    height: 20px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 32px;
+    margin: 12px 92px 32px 0;
+}
+
+.avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 400px;
+    border: 1px solid var(--white);
+}
+
+.avatar span {
+    font-size: 16px;
+    font-weight: 288px;
+    color: var(--soft-blue);
+    font-weight: lighter;
+    width: 100%;
+    padding: 1%;
+    margin: 0 0 2% 4%;
+}
+
+.avatar a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+hr {
+    max-width: 288px;
+    border-color: var(--very);
+}
+
+@media only screen and (max-width: 375px) {
+    .d-equilibrium p {
+        max-width: 100%;
+    }
+
+    .image-equilibrium img {
+        max-width: 270px;
+        max-height: 270px;
+    }
+}
